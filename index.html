@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="default">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-flex布局" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/20/flex布局/" class="article-date">
+  <time datetime="2019-01-20T08:07:32.000Z" itemprop="datePublished">2019-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/20/flex布局/">flex布局</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>本次介绍h5开发的重要布局方式————<strong>弹性盒子</strong></p>
+<h3 id="什么是flexbox"><a href="#什么是flexbox" class="headerlink" title="什么是flexbox"></a>什么是flexbox</h3><p>CSS3 弹性盒子(Flexible Box 或 Flexbox)，是一种用于在页面上布置元素的布局模式，使得当页面布局必须适应不同的屏幕尺寸和不同的显示设备时，元素可预测地运行。对于许多应用程序，弹性盒子模型提供了对块模型的改进，因为它不使用浮动，flex容器的边缘也不会与其内容的边缘折叠。</p>
+<h3 id="使用flex布局"><a href="#使用flex布局" class="headerlink" title="使用flex布局"></a>使用flex布局</h3><h4 id="1-弹性容器"><a href="#1-弹性容器" class="headerlink" title="1.弹性容器"></a>1.弹性容器</h4><p>包含着弹性项目的父元素。通过设置 display 属性的值为 flex 或 inline-flex 来定义弹性容器。</p>
+<h4 id="2-弹性项目"><a href="#2-弹性项目" class="headerlink" title="2.弹性项目"></a>2.弹性项目</h4><p>弹性容器的每个子元素都称为弹性项目。弹性容器直接包含的文本将被包覆成匿名弹性单元。</p>
+<h4 id="3-一些属性"><a href="#3-一些属性" class="headerlink" title="3.一些属性"></a>3.一些属性</h4><p>1.flex-direction 确立主轴 使得容器内按照行还是列方向排列 参数为：row/column<br>2.justify-content 定义了在当前行上，弹性项目沿主轴如何排布<br>3.align-items 定义了在当前行上，弹性项目沿侧轴默认如何分布<br>4.align-self 定义了单个弹性项目在侧轴上应当如何对齐，这个定义会覆盖由 align-items 所确立的默认值。<br>5.flex-wrap 弹性项目可以排布在单个行或者多个行中。此属性控制侧轴的方向和新行排列的方向<br>6.flex-grow 扩展子元素的宽度 设置当前元素应该占据剩余空间的比例值<br>比例值计算：<strong>当前空间的flex-grow/所有兄弟元素的flex-grow的和</strong><br>7.flex-shrink 定义收缩比例，通过设置的值来计算收缩空间  默认值为1<br>比例值计算：<strong>当前空间的flex-shrink/所有兄弟元素的flex-grow的和</strong><br>8.flex属性 包括flex-grow 和flex-shrink 默认为 0 1 auto</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/20/flex布局/" data-id="cjr4mrqra0001lgow1le2e8mj" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Web语义化" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/20/Web语义化/" class="article-date">
+  <time datetime="2019-01-20T07:33:42.000Z" itemprop="datePublished">2019-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/20/Web语义化/">Web语义化</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="前提"><a href="#前提" class="headerlink" title="前提"></a>前提</h2><p>在正式开始之前，我想先提一提最近感受最深刻的撸码感受。 老师们也常提起的<strong>Web语义化</strong>。虽然不是一个程序员需要的硬实力，但是掌握了语义化，才能称自己为高B格的程序员。</p>
+<h3 id="什么是语义化？"><a href="#什么是语义化？" class="headerlink" title="什么是语义化？"></a>什么是语义化？</h3><p>其实语义化简单的来说就是使用恰当的html标签，以及一些恰当的命名来使得页面具有良好的结构与定义，使得绝大多数人看到你的代码就能明白这是什么。 </p>
+<h3 id="为什么要实现语义化"><a href="#为什么要实现语义化" class="headerlink" title="为什么要实现语义化"></a>为什么要实现语义化</h3><p>先举个简单的例子：<br>将一个人的鼻子、眼睛、手、脚  比作html标签， 鼻子就是用来闻东西的，眼睛是用来看东西的  也就是说 不同功能的部位就应该做不同的事  不同的标签也一样。 手可以拿东西，脚通过练习虽然也能拿但是总归会让人觉得变扭。这就类似于使用很多div去做导航栏一样，通过一些css样式看上去虽然是一样的，但是可读性与可扩展性很差。远不如直接使用ul，li做导航栏来的方便</p>
+<p>其次就是一个语义化好的网页，也有利于浏览器、搜索引擎解析，利于爬虫标记、利于SEO。前端已经普及了移动端的开发，在4G信号不好的时候，css样式加载不出来，用户也可以通过你良好的语义化 单看html标签页面就能明白功能是什么。</p>
+<h3 id="html语义化标签"><a href="#html语义化标签" class="headerlink" title="html语义化标签"></a>html语义化标签</h3><p>HTML为网页文档内容提供上下文结构和含义。<br>下面简单介绍下常用的html语义化标签<br>1.header元素<br>header代表网页或者section的页眉，可以包含标题，目录，导航栏等相关部分，没有个数限制</p>
+<p>2.footer元素<br>footer元素代表“网页”或任意“section”的页脚，没有个数限制</p>
+<p>3.nav元素<br>nav元素代表页面的导航链接区域，用于定义页面的主要导航部分。<br>注意：是主导航部分，其余部分其实不太适合</p>
+<p>4.article元素<br>article 代表一个在文档，页面或者网站中自成一体的内容，其目的是为了让开发者独立开发或重用。除了它的内容，article会有一个标题(通常会在header里)，一个footer页脚。<br>注意：article内部可以嵌套article 表示评论或者其他跟文章有关的内容，也可以嵌套section,表示从属关系</p>
+<p>5.section元素<br>section 元素代表文档中的“节”或“段”，“段”可以是指一片文章里按照主题的分段；“节”可以是指一个页面里的分组。</p>
+<p>6.aside元素<br>aside 元素被包含在article元素中作为主要内容的附属信息部分，其中的内容可以是与当前文章有关的相关资料，标签，名词解释等。</p>
+<h3 id="CSS语义化"><a href="#CSS语义化" class="headerlink" title="CSS语义化"></a>CSS语义化</h3><p>CSS语义就是class和ID命名的语义。class属性作为HTML与CSS衔接的纽带，其本意是用来描述元素内容的。指用易于理解的名称对html标签附加的class或id命名。如果说HTML语义化标签是给机器看的，那么CSS命名的语义化就是给人看的。良好的CSS命名方式减少沟通调试成本，易于理解。</p>
+<p>目前来说较好的css规范为腾讯的BEM规范<br>B(block):独立的页面及逻辑单元，我们通常意义上的component<br>E(element):块中的组成部分，不能脱离块单独存在<br>M(modifier):修饰符，可修饰块或元素</p>
+<p>使用规则：<br><strong>block__element_modifier</strong></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/20/Web语义化/" data-id="cjr4mrvyo0002lgowp6fbuoyt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-cssSkill" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/20/cssSkill/" class="article-date">
+  <time datetime="2019-01-20T06:16:25.000Z" itemprop="datePublished">2019-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/20/cssSkill/">cssSkill</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>在完善自己的第一个静态网页项目————<a href="https://gitee.com/lingJTC/weibo/tree/v7" target="_blank" rel="noopener">迪丽热巴微博页面</a>制作中感悟到的一些css技巧 这边记录下来 希望大家从中获益 少走弯路 同时也巩固自己的知识</p>
+<h2 id="自认为重要的CSS知识点"><a href="#自认为重要的CSS知识点" class="headerlink" title="自认为重要的CSS知识点"></a>自认为重要的CSS知识点</h2><h3 id="1-css权重问题"><a href="#1-css权重问题" class="headerlink" title="1.css权重问题"></a>1.css权重问题</h3><p>！important       Infinity<br>行间样式           1000<br>id                 100<br>class|属性|伪类     10<br>标签|伪元素         1<br>通配符              0</p>
+<p>这些选择器权重是可以累加的，最终谁大 谁就能获得样式</p>
+<h3 id="2-利用border画三角形"><a href="#2-利用border画三角形" class="headerlink" title="2.利用border画三角形"></a>2.利用border画三角形</h3><p>代码示例如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">width:0;</span><br><span class="line">height:0;</span><br><span class="line">border:100px solid black;</span><br><span class="line">border-left-color:black;</span><br><span class="line">border-top-color:transparent;</span><br><span class="line">border-right-color:transparent;</span><br><span class="line">border-bottom-color:transparent;</span><br></pre></td></tr></table></figure>
+<p>其显示的是一个方向向右的黑色三角形，可以改变border-width的值以及border的方向来改变三角形的样子。</p>
+<h3 id="3-触发盒子bfc"><a href="#3-触发盒子bfc" class="headerlink" title="3.触发盒子bfc"></a>3.触发盒子bfc</h3><p>如何触发一个盒子的bfc<br>1.position:absolute      定位<br>2.display:inline-block   改变元素行块<br>3.float:left/right    浮动<br>4.overflow:hidden     溢出部分隐藏</p>
+<h3 id="4-定位-position"><a href="#4-定位-position" class="headerlink" title="4.定位 position"></a>4.定位 position</h3><p>设置position后使用<br>right<br>top<br>left<br>bottom属性进行位置偏移</p>
+<p>position:absolute<br>1.脱离原来位置 进行定位<br>※相对于最近的有定位的父级进行定位,如果没有,那么相对于文档进行定位</p>
+<p>position:relative<br>2.保留原来位置 进行定位<br>※相对于自己原来的位置进行定位</p>
+<p>positon:fixed<br>3.固定于页面的某个位置定位 </p>
+<h3 id="5-浮动-float"><a href="#5-浮动-float" class="headerlink" title="5.浮动 float"></a>5.浮动 float</h3><p>1.浮动元素产生了浮动流<br>所有产生了浮动流的元素，<strong>块级元素</strong>看不到他们<br>产生了bfc的元素和文本类属性的元素以及文本都能看到浮动元素</p>
+<p>可以利用伪元素清除浮动流 clear：both    <strong>必须为块级元素</strong></p>
+<h3 id="6-编写css时为了节省时间可以多复用"><a href="#6-编写css时为了节省时间可以多复用" class="headerlink" title="6.编写css时为了节省时间可以多复用"></a>6.编写css时为了节省时间可以多复用</h3><p>一个页面中的样式其实有很多是重复的 比如不同区域的字体大小，颜色，粗细 区域的边框样式 边距等。这里就可以只编写一个css样式 然后在html中加入class来引用就可以了 这样会大大节约编写代码的时间以及减少冗余的代码量。</p>
+<h4 id="以上为本次项目css中收获的一些知识，以后遇到其他知识会继续更新"><a href="#以上为本次项目css中收获的一些知识，以后遇到其他知识会继续更新" class="headerlink" title="以上为本次项目css中收获的一些知识，以后遇到其他知识会继续更新 -__-"></a>以上为本次项目css中收获的一些知识，以后遇到其他知识会继续更新 -__-</h4>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/20/cssSkill/" data-id="cjr4mrme50000lgow32im5669" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/20/hello-world/" class="article-date">
+  <time datetime="2019-01-20T05:58:34.768Z" itemprop="datePublished">2019-01-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/01/20/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/01/20/hello-world/" data-id="cjr4mpqv20000gsowr3xxed4d" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/20/flex布局/">flex布局</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/20/Web语义化/">Web语义化</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/20/cssSkill/">cssSkill</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/20/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
